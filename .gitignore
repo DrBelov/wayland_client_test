@@ -1,0 +1,5 @@
+#Untracked files
+globals.c
+server.c
+client.c
+build/*
