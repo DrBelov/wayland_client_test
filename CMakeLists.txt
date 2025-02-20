@@ -36,3 +36,6 @@ add_executable(xdg_shell_basics xdg_shell_basics.c ${GENERATED_CODE})
 add_dependencies(xdg_shell_basics wayland_client_header)
 target_include_directories(xdg_shell_basics PRIVATE ${GENERATED_DIR})
 target_link_libraries(xdg_shell_basics PRIVATE wayland-client rt)
+
+add_executable(wayland_globals wayland-globals.c)
+target_link_libraries(wayland_globals PRIVATE wayland-client)
